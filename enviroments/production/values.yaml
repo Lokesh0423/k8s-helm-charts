@@ -1,0 +1,21 @@
+replicaCount: 3
+
+image:
+  repository: lokesh0423acr.azurecr.io/nodejs-cicd-pipeline
+  tag: "latest"
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 3000
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 128Mi
+  requests:
+    cpu: 250m
+    memory: 64Mi
+
+namespace: production
+environment: production
