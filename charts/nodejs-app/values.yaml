@@ -1,0 +1,30 @@
+# Default values for nodejs-app
+replicaCount: 1
+
+image:
+  repository: lokesh0423acr.azurecr.io/nodejs-cicd-pipeline
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 3000
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 128Mi
+  requests:
+    cpu: 250m
+    memory: 64Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80
+
+namespace: default
+
+environment: production
