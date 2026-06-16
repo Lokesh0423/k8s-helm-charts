@@ -1,0 +1,8 @@
+Your nodejs-app has been deployed to namespace: {{ .Values.namespace }}
+
+To verify:
+  kubectl get pods -n {{ .Values.namespace }}
+  kubectl get svc -n {{ .Values.namespace }}
+
+Environment: {{ .Values.environment }}
+Replicas: {{ .Values.replicaCount }}
