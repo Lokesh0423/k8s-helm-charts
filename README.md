@@ -11,11 +11,11 @@ What this repo does
 
 * Parameterized Node.js app deployment to AKS using a single chart with separate staging and production values files.
 * Reusable Helm templates for Deployment, Service, Ingress, ConfigMap, and HPA.
-* Liveness and readiness probes wired to /health for safe rolling updates.
+* Liveness and readiness probes wired to health for safe rolling updates.
 * Resource requests and limits configured per environment.
 * Helper templates for consistent labels and naming across resources.
 
- Architecture
+ Architecture 
 
 \`\`\`mermaid
 flowchart LR
