@@ -145,6 +145,6 @@ outcomes
 
 Author 
 Lokesh Kumar Gaddala
-DevOps and Cloud Engineer based in Berlin
+DevOps and Cloud Engineer based in Germany
 [LinkedIn](https://linkedin.com/in/lokesh-kumar-gaddala) | [GitHub](https://github.com/Lokesh0423)
 
